@@ -13,13 +13,17 @@ import {
   useMantineTheme,
   Anchor,
   Center,
+  Stack,
   Button,
+  Container,
 } from "@mantine/core";
 import logo from "../assets/logo.svg";
+import Map from "../components/map/map";
 
 function Dashboard() {
   const theme = useMantineTheme();
   const [opened, setOpened] = useState(false);
+  const [selectedSection, setSelectedSection] = useState(<Map />);
   return (
     <>
       <AppShell
@@ -49,19 +53,30 @@ function Dashboard() {
               </Center>
             </Navbar.Section>
 
-            <Navbar.Section grow mt="md" className="dashboard-navigation">
-              <Text>
-                <Anchor href="/">Maps</Anchor>
-              </Text>
-              <Text>
-                <Anchor href="/">Parking Finder</Anchor>
-              </Text>
-              <Text>
-                <Anchor href="/">Traffic Status</Anchor>
-              </Text>
-              <Text>
-                <Anchor href="/">Road Warnings</Anchor>
-              </Text>
+            <Navbar.Section
+              grow
+              mt="md"
+              className="dashboard-navigation"
+              style={{ padding: "20px" }}
+            >
+              <Stack style={{ textAlign: "center" }}>
+                <Text>
+                  <Anchor href="/">Maps</Anchor>
+                </Text>
+
+                <Text>
+                  <Anchor href="/">Parking Finder</Anchor>
+                </Text>
+                <Text>
+                  <Anchor href="/">Traffic Status</Anchor>
+                </Text>
+                <Text>
+                  <Anchor href="/">Road Warnings</Anchor>
+                </Text>
+                <Text>
+                  <Anchor href="/">Maps</Anchor>
+                </Text>
+              </Stack>
             </Navbar.Section>
             <Navbar.Section>
               {/* need on click */}
@@ -101,7 +116,9 @@ function Dashboard() {
           </Header>
         }
       >
-        <Text>content</Text>
+        <div className="section-container">
+          <Container size="xl">{selectedSection}</Container>
+        </div>
       </AppShell>
     </>
   );
