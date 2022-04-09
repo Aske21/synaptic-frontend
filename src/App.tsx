@@ -3,11 +3,11 @@ import { MantineProvider } from "@mantine/core";
 import { Navigation } from "./components/navbar/Navigation";
 import Dashboard from "./pages/Dashboard";
 import Home from "./pages/Home";
-<<<<<<< HEAD
 
 import { Routes, Route, Link } from "react-router-dom";
 import { Login } from "./components/login/login";
 import { Register } from "./components/register/register";
+import { TestingPage } from "./pages/testingPage";
 
 function App() {
   return (
@@ -40,16 +40,9 @@ function App() {
         <Route path="/login" element={<Login />} />
         <Route path="/register" element={<Register />} />
         <Route path="/dashboard" element={<Dashboard />} />
+        <Route path="/testpage" element={<TestingPage />} />
       </Routes>
     </MantineProvider>
-=======
-import {TestingPage} from "./pages/testingPage";
-function App() {
-  return (
-   <div>
-     <TestingPage></TestingPage>
-   </div>
->>>>>>> a9995587639e8b8840f46f57bbb382d544b1ed2e
   );
 }
 

@@ -43,6 +43,7 @@ function Home() {
             fontWeight: 500,
             width: "400px",
             padding: "5px",
+            fontSize: "24px",
           }}
         >
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo nihil
@@ -57,6 +58,7 @@ function Home() {
             fontWeight: 500,
             width: "400px",
             padding: "5px",
+            fontSize: "24px",
           }}
         >
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo nihil
