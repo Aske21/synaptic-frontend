@@ -91,7 +91,7 @@ function Home() {
       >
         <Center style={{ padding: "10px" }}>
           <h5>@BESTMostar HackAtHome 2022.</h5>
-          <h5> Team - Synapse</h5>
+          <h5> Team - Synaptic</h5>
         </Center>
       </Footer>
     </>

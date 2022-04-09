@@ -2,6 +2,11 @@ import React from "react";
 import { MantineProvider } from "@mantine/core";
 import { Navigation } from "./components/navbar/Navigation";
 import Dashboard from "./pages/Dashboard";
+import Home from "./pages/Home";
+
+import { Routes, Route, Link } from "react-router-dom";
+import { Login } from "./components/login/login";
+import { Register } from "./components/register/register";
 
 function App() {
   return (
@@ -28,12 +33,13 @@ function App() {
         },
       }}
     >
-      <div>
-        {/* <Navigation /> */}
-        <div>
-          <Dashboard />
-        </div>
-      </div>
+      <Navigation />
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/login" element={<Login />} />
+        <Route path="/register" element={<Register />} />
+        <Route path="/dashboard" element={<Dashboard />} />
+      </Routes>
     </MantineProvider>
   );
 }

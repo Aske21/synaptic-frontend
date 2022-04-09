@@ -64,13 +64,17 @@ export function Register() {
           />
 
           <Group>
-            <Button type="submit" id="register" className="button">
+            <Button type="submit" id="register" className="nav-button button">
               Register
             </Button>
           </Group>
         </form>
         <Group className="message">
-          <Button className="button" id="registerGoogle" type="submit">
+          <Button
+            className="nav-button button"
+            id="registerGoogle"
+            type="submit"
+          >
             Sign in with google
           </Button>
         </Group>

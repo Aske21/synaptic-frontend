@@ -28,7 +28,7 @@ export function Navigation() {
     >
       <Grid>
         <Grid.Col span={10}>
-          <Anchor>
+          <Anchor href="/" id="logo">
             {" "}
             <img src={logo} alt="logo" className="nav-logo" />
             Synaptic
@@ -45,9 +45,22 @@ export function Navigation() {
             }}
           >
             <h1>Synaptic</h1>
-            <h3>About us</h3>
-            <h3>Login</h3>
-            <h3>Register</h3>
+            <h3>
+              <Anchor href="/">Home</Anchor>
+            </h3>
+            <h3>
+              <Anchor href="/">About us</Anchor>
+            </h3>
+            <h3>
+              <Anchor href="/">Contact us</Anchor>
+            </h3>
+            <h3></h3>
+            <h3>
+              <Anchor href="/login">Login</Anchor>
+            </h3>
+            <h3>
+              <Anchor href="/register">Register</Anchor>
+            </h3>
           </Drawer>
           <Group position="center">
             <Button

@@ -11,6 +11,8 @@ import {
   MediaQuery,
   Burger,
   useMantineTheme,
+  Anchor,
+  Button,
 } from "@mantine/core";
 import logo from "../assets/logo.svg";
 
@@ -33,15 +35,26 @@ function Dashboard() {
             hidden={!opened}
             width={{ sm: 200, lg: 300 }}
           >
-            <Text>Application navbar</Text>
+            {/* Links  - routing */}
+            <Navbar.Section grow mt="md" style={{ padding: "20px" }}>
+              <Text>
+                <Anchor href="/map">Maps</Anchor>
+              </Text>
+              <Text>
+                <Anchor href="/map">Parking Finder</Anchor>
+              </Text>
+              <Text>
+                <Anchor href="/map">Traffic Status</Anchor>
+              </Text>
+              <Text>
+                <Anchor href="/map">Road Warnings</Anchor>
+              </Text>
+            </Navbar.Section>
+            <Navbar.Section>
+              {/* need on click */}
+              <Button className="nav-button">Log out</Button>
+            </Navbar.Section>
           </Navbar>
-        }
-        aside={
-          <MediaQuery smallerThan="sm" styles={{ display: "none" }}>
-            <Aside p="md" hiddenBreakpoint="sm" width={{ sm: 200, lg: 300 }}>
-              <Text>Application sidebar</Text>
-            </Aside>
-          </MediaQuery>
         }
         footer={
           <Footer height={60} p="md">
@@ -51,7 +64,12 @@ function Dashboard() {
         header={
           <Header height={70} p="md">
             <div
-              style={{ display: "flex", alignItems: "center", height: "100%" }}
+              style={{
+                display: "flex",
+                alignItems: "center",
+                height: "100%",
+                color: "white",
+              }}
             >
               <MediaQuery largerThan="sm" styles={{ display: "none" }}>
                 <Burger
