@@ -1,14 +1,14 @@
 import { Select, Button, Box, Container, Text} from '@mantine/core';
 import { useState } from 'react';
-import { Link } from 'react-router-dom';
+import './ticketNotificationTest.css';
 
 export function TicketTest() {
     const [value,setValue]=useState('')
     
     return (
-        <Container>
-            <Text>Ticket Proof Of Concept</Text>
-            <Box>
+        <Container className="testContainer">
+            <Text className="headerTitle">Ticket Proof Of Concept</Text>
+            <Box className="testBox">
                 <Select
                 
                 label="Choose ticket type"
@@ -22,7 +22,7 @@ export function TicketTest() {
                 onChange={(selectedValue)=> setValue(selectedValue!)}
                 />
                 {/* dodati user selection za poc i promjenit iz alerta u text notifikaciju*/}
-                <Button onClick={()=>alert(value)} >Send ticket notification</Button>
+                <Button onClick={()=>alert(value)} className="button" >Send ticket notification</Button>
             </Box>
         </Container>
     );
