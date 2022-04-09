@@ -1,4 +1,5 @@
 import { useForm } from '@mantine/form';
+import React from 'react';
 import { PasswordInput, Group, Button, Box, TextInput, Container, Text } from '@mantine/core';
 import './register.css'
 export function Register() {
