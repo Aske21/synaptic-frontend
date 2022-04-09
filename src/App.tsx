@@ -3,6 +3,7 @@ import { MantineProvider } from "@mantine/core";
 import { Navigation } from "./components/navbar/Navigation";
 import Dashboard from "./pages/Dashboard";
 import Home from "./pages/Home";
+<<<<<<< HEAD
 
 import { Routes, Route, Link } from "react-router-dom";
 import { Login } from "./components/login/login";
@@ -41,6 +42,14 @@ function App() {
         <Route path="/dashboard" element={<Dashboard />} />
       </Routes>
     </MantineProvider>
+=======
+import {TestingPage} from "./pages/testingPage";
+function App() {
+  return (
+   <div>
+     <TestingPage></TestingPage>
+   </div>
+>>>>>>> a9995587639e8b8840f46f57bbb382d544b1ed2e
   );
 }
 
