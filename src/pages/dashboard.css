@@ -1,0 +1,53 @@
+.nav-logo {
+  width: 50px;
+  height: 40px;
+}
+
+.nav-button {
+  background-color: #ee6c4d;
+  font-size: 19px;
+}
+
+.nav-button:hover {
+  background-color: #c7593d;
+}
+
+.mantine-1q0ctyy:hover {
+  text-decoration: none;
+  color: #ee6c4d;
+}
+
+.mantine-ywzrko {
+  background-color: #3d5a80;
+  border-bottom: 5px solid #ee6c4d;
+}
+
+.mantine-1br78w0 {
+  background-color: #3d5a80;
+  border-bottom: 5px solid #ee6c4d;
+  border-right: none;
+}
+
+@media only screen and (max-width: 600px) {
+  .mantine-qqxkm0 {
+    background-color: #ee6c4d;
+  }
+}
+
+.mantine-1hcytqn {
+  color: white;
+  background-color: #3d5a80;
+  border-top: none;
+}
+
+.mantine-1q0ctyy {
+  text-decoration: none;
+  color: white;
+  padding: 5px;
+  font-size: 22px;
+}
+
+.dashboard-navigation {
+  padding: 20px;
+  font-weight: bold;
+}

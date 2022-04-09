@@ -1,0 +1,41 @@
+body {
+  background: #3d5a80;
+  margin: 0;
+  padding: 0;
+  color: white;
+}
+html {
+  font-size: 100%;
+}
+
+.home-img {
+  height: 200px;
+}
+
+.contribute-svg {
+  width: 100px;
+  height: 300px;
+}
+
+.contribute-container {
+  padding: 20px;
+  width: 300px;
+}
+
+.contribute-container img {
+  width: 600px;
+  height: 600px;
+}
+
+#partner {
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease 0s;
+  outline: none;
+}
+
+#partner:hover {
+  background-color: #2ee59d;
+  box-shadow: 0px 15px 20px rgba(46, 229, 157, 0.4);
+  color: #fff;
+  transform: translateY(-7px);
+}
