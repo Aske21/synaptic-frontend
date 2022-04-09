@@ -1,7 +1,9 @@
 import { Select, Button, Box, Container, Text } from "@mantine/core";
 import { useState } from "react";
-import "./ticketNotificationTest.css";
+import { sendMessage } from "../../services/telegramBot";
 
+import "./ticketNotificationTest.css";
+<pre>{process.env.REACT_APP_TELEGRAM_USER_ID}</pre>;
 export function TicketTest() {
   const [value, setValue] = useState("");
 
@@ -28,7 +30,15 @@ export function TicketTest() {
           onChange={(selectedValue) => setValue(selectedValue!)}
         />
         {/* dodati user selection za poc i promjenit iz alerta u text notifikaciju*/}
-        <Button onClick={() => alert(value)} className="button">
+        <Button
+          onClick={() =>
+            sendMessage(
+              `${process.env.REACT_APP_TELEGRAM_USER_ID}`,
+              value.toString()
+            )
+          }
+          className="button"
+        >
           Send ticket notification
         </Button>
       </Box>

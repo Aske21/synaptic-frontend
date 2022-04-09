@@ -32,6 +32,7 @@ export function TrafficNotification() {
         <Text style={{ marginTop: 20, fontSize: 20, fontWeight: "bold" }}>
           {warn}
         </Text>
+        {/* TODO ADD TELEGRAM MESSAGE NOTIFICATION */}
       </Box>
     </Container>
   );
