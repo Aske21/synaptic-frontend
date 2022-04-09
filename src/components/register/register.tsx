@@ -1,9 +1,3 @@
-<<<<<<< HEAD
-import { useForm } from '@mantine/form';
-import React from 'react';
-import { PasswordInput, Group, Button, Box, TextInput, Container, Text } from '@mantine/core';
-import './register.css'
-=======
 import { useForm } from "@mantine/form";
 import React from "react";
 import {
@@ -18,7 +12,6 @@ import {
   useMantineTheme,
 } from "@mantine/core";
 import "./register.css";
->>>>>>> 7387da443529131c26090e85b3982703a9fb9aa4
 export function Register() {
   const form = useForm({
     initialValues: {
