@@ -1,0 +1,56 @@
+.testContainer {
+  margin-left: 0;
+  margin-right: 0;
+  width: 300px;
+  height: 300px;
+  background-color: #3d5a80;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  opacity: 0.9;
+  border-radius: 2%;
+}
+.semaphoreBox {
+  display: grid;
+  grid-template-columns: 50px 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  gap: 0px 0px;
+  grid-template-areas:
+    "S1 L1 C1"
+    "S2 L2 C2";
+}
+#s1 {
+  grid-area: S1;
+}
+#s2 {
+  grid-area: S2;
+}
+#l1 {
+  grid-area: L1;
+}
+#l2 {
+  grid-area: L2;
+}
+#c1 {
+  grid-area: C1;
+}
+#c2 {
+  grid-area: C2;
+}
+
+.headerTitle {
+  font-size: 1.5rem;
+  margin-bottom: 15px;
+  color: black;
+}
+
+.button {
+  margin-top: 20px;
+  width: 100%;
+  font-weight: 700;
+  border: 0px;
+  background-color: #ee6c4d;
+  cursor: pointer;
+  transition: opacity 0.25s ease-out;
+}
