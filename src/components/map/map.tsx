@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import { GoogleMap, DirectionsRenderer } from "@react-google-maps/api";
 import React, { useState } from "react";
 import GoogleMapReact from "google-map-react";
@@ -133,3 +134,6 @@ export default function Map() {
     </div>
   );
 }
+=======
+export function nista() {}
+>>>>>>> ee727d84a5e3091bf7707d82862a6cd8591e6650
