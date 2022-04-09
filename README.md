@@ -1,46 +1,47 @@
-# Getting Started with Create React App
+# Synaptic
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project was bootstrapped with [Create React App]
 
-## Available Scripts
 
-In the project directory, you can run:
 
-### `npm start`
+### Notes
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+Color pallete:
+Hex Codes: #3d5a80 // #98c1d9 // #e0fbfc // #ee6c4d //#293241
+https://venngage-wordpress.s3.amazonaws.com/uploads/2021/06/Burnt-Sienna-Orange-Bedazzled-Blue-Color-Palette.png
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+Todo: 
+    -USER PAGE I USER SETUP
+    -Autentikacija - FIREBASE/
+    -JSONSERVER - mock database umjesto full baze; koristit za storanje user preferences
+    -Road congestion
+    -Road alerts(SMS/MESSAGING APP)
 
-### `npm test`
+    ?Display blocked off roads + PROPER DISPLAY OF ONE WAY STREETS + I ULICE KROZ KOJE NE MOZE AUTO
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+    Admin page items:
+    -Implementacija live video feeda kombinirana sa algoritmom za detekciju i prepoznavanje
+    -Manual road status updates - eventualno kroz lifecycle aplikacije izbaciti ljudski faktor
+    -Issuing alerts based on requirements
 
-### `npm run build`
+    ****AI koji kada detektuje nesrecu, automatski salje centrali hitne i policije obavijest i lokaciju te ako je mogucnost po kvaliteti slike procjenu stete i ozljeda - mockat nekako, nije izvodljivo u malom time frame i velika limitacija trenutnom infrastrukturom i razvojem 
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+    qol:
+    -Ticket notifikacije - elektronske obavijesti o kaznama (MESSAGING/EMAIL) - speeding ticket notification
+    -Parking finder - najblizi 'slobodan'(provjeriti mogucnost tacnosti informacija o dostupnosti parkinga) parking u radiusu 50-100-150 metara (drop down) od odabrane lokacije 
+    -Automatske notifikacije o stanju na cesti u slucaju nezgoda/zastoja +            (prestanka rada semafora; vremenske nepogode u blizini)
+    
+    *!(Implementirat ml algoritam/model za real-time pracenje intenziteta saobracaja)
+    *(Mozda : autonomous semafori koji se sami modificiraju bazirano na podacima iz prijasnjeg)
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+    SERVISI UMJESTO FULL API
+    Viber/mess/wapp/telegram api salje poruku, user u preferencama odabira zeljeni nacin kontakta
 
-### `npm run eject`
+    Open source
+    Community driven
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+    Nove features na aplikaciju pored nas mogu dodavati i korisnici kroz "community features" (implementacija sistema za provjeru istih i prevencija eksploitacije), koje bi kroz 'rating sistem' bile eventualno inkorporisane u core aplikaciju
+    
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+whoami 2.0 when?
