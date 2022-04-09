@@ -3,12 +3,13 @@ import React from 'react';
 
 import {Login} from './components/login/login';
 import {Register} from './components/register/register'
+import {TicketTest} from './components/ticketNotificationTest/ticketNotificationTest';
 
 function App() {
   return (
     <div >
      <div>
-       <Register />
+       <TicketTest/>
        </div> 
     </div>
 
