@@ -41,7 +41,7 @@ export function Login() {
         />
 
         <Group>
-          <Button type="button" className="button" size="md">Log In</Button>
+          <Button type="submit" className="button" size="md">Log In</Button>
         </Group>
       </form>
       <Group className="message">
