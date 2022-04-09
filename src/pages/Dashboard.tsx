@@ -6,12 +6,13 @@ import {
   Navbar,
   Header,
   Footer,
-  Aside,
+  Avatar,
   Text,
   MediaQuery,
   Burger,
   useMantineTheme,
   Anchor,
+  Center,
   Button,
 } from "@mantine/core";
 import logo from "../assets/logo.svg";
@@ -36,18 +37,30 @@ function Dashboard() {
             width={{ sm: 200, lg: 300 }}
           >
             {/* Links  - routing */}
-            <Navbar.Section grow mt="md" style={{ padding: "20px" }}>
+            <Navbar.Section>
+              {/* need on click */}
+              <Center style={{ padding: "15px", margin: "2px" }}>
+                <Avatar src={null} alt="WhoAmI" color="red">
+                  WAI
+                </Avatar>{" "}
+                <h2 style={{ padding: "15px", fontSize: "22px" }}>
+                  Ime Prezime
+                </h2>
+              </Center>
+            </Navbar.Section>
+
+            <Navbar.Section grow mt="md" className="dashboard-navigation">
               <Text>
-                <Anchor href="/map">Maps</Anchor>
+                <Anchor href="/">Maps</Anchor>
               </Text>
               <Text>
-                <Anchor href="/map">Parking Finder</Anchor>
+                <Anchor href="/">Parking Finder</Anchor>
               </Text>
               <Text>
-                <Anchor href="/map">Traffic Status</Anchor>
+                <Anchor href="/">Traffic Status</Anchor>
               </Text>
               <Text>
-                <Anchor href="/map">Road Warnings</Anchor>
+                <Anchor href="/">Road Warnings</Anchor>
               </Text>
             </Navbar.Section>
             <Navbar.Section>
@@ -80,8 +93,10 @@ function Dashboard() {
                   mr="xl"
                 />
               </MediaQuery>
-              <img src={logo} alt="logo" className="nav-logo" />
-              <h1>Synaptic</h1>
+              <Anchor href="/" id="logo">
+                <img src={logo} alt="logo" className="nav-logo" />
+                <b>Synaptic</b>
+              </Anchor>
             </div>
           </Header>
         }

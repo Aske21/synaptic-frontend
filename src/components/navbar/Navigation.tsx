@@ -29,9 +29,8 @@ export function Navigation() {
       <Grid>
         <Grid.Col span={10}>
           <Anchor href="/" id="logo">
-            {" "}
             <img src={logo} alt="logo" className="nav-logo" />
-            Synaptic
+            <b>Synaptic</b>
           </Anchor>
         </Grid.Col>
         <Grid.Col span={2}>
@@ -44,29 +43,44 @@ export function Navigation() {
               fontFamily: theme.fontFamily,
             }}
           >
-            <h1>Synaptic</h1>
+            <h1>
+              {" "}
+              <img src={logo} alt="logo" className="nav-logo" />
+              Synaptic
+            </h1>
             <h3>
-              <Anchor href="/">Home</Anchor>
+              <Anchor href="/" id="drawer-nav">
+                Home
+              </Anchor>
             </h3>
             <h3>
-              <Anchor href="/">About us</Anchor>
+              <Anchor href="/" id="drawer-nav">
+                About us
+              </Anchor>
             </h3>
             <h3>
-              <Anchor href="/">Contact us</Anchor>
+              <Anchor href="/" id="drawer-nav">
+                Contact us
+              </Anchor>
             </h3>
             <h3></h3>
             <h3>
-              <Anchor href="/login">Login</Anchor>
+              <Anchor href="/login" id="drawer-nav">
+                Login
+              </Anchor>
             </h3>
             <h3>
-              <Anchor href="/register">Register</Anchor>
+              <Anchor href="/register" id="drawer-nav">
+                Register
+              </Anchor>
             </h3>
           </Drawer>
           <Group position="center">
             <Button
               className="nav-button"
               onClick={() => setOpened(true)}
-              style={{ fontSize: "22px" }}
+              style={{ fontSize: "22px", width: "125px", height: "40px" }}
+              id="partner"
             >
               Menu
             </Button>

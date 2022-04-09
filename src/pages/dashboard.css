@@ -25,6 +25,7 @@
 .mantine-1br78w0 {
   background-color: #3d5a80;
   border-bottom: 5px solid #ee6c4d;
+  border-right: none;
 }
 
 @media only screen and (max-width: 600px) {
@@ -44,4 +45,9 @@
   color: white;
   padding: 5px;
   font-size: 22px;
+}
+
+.dashboard-navigation {
+  padding: 20px;
+  font-weight: bold;
 }

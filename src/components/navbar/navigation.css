@@ -40,3 +40,11 @@
 #logo:hover {
   color: white;
 }
+
+#drawer-nav:hover {
+  color: black;
+}
+
+#logo {
+  font-size: 28px;
+}

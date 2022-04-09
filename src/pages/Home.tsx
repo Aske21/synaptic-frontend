@@ -32,7 +32,16 @@ function Home() {
         >
           A real-time monitoring system to improve your city.
         </Blockquote>
-        <Button className="nav-button">Register now</Button>
+        <Button
+          className="nav-button"
+          id="partner"
+          style={{
+            width: "200px",
+            height: "60px",
+          }}
+        >
+          Register now
+        </Button>
       </Center>
       <hr style={{ width: "750px" }} />
       <Center style={{ backgroundColor: " #98c1d9", padding: "50px" }}>
@@ -69,18 +78,32 @@ function Home() {
       </Center>
 
       <Container size="xs" className="contribute-container">
-        <img src={contribute} alt="contribute" id="contribute-svg" />
-        <h2
-          style={{
-            fontFamily: theme.fontFamily,
-            fontWeight: 500,
-            width: "400px",
-            padding: "5px",
-          }}
-        >
-          Become a part of our team and help better your city!
-        </h2>
-        <Button className="nav-button">Join us</Button>
+        <Center>
+          <img src={contribute} alt="contribute" id="contribute-svg" />
+        </Center>
+        <Center>
+          <h2
+            style={{
+              fontFamily: theme.fontFamily,
+              fontWeight: 500,
+              width: "400px",
+              padding: "5px",
+            }}
+          >
+            Become a part of our team and help better your city!
+          </h2>
+          <Button
+            className="nav-button"
+            style={{
+              width: "300px",
+              height: "60px",
+            }}
+            id="partner"
+          >
+            {" "}
+            Join us
+          </Button>
+        </Center>
       </Container>
       <Footer
         height={80}
