@@ -1,5 +1,4 @@
 import React from "react";
-
 import { MantineProvider } from "@mantine/core";
 import { Navigation } from "./components/navbar/Navigation";
 import Home from "./pages/Home";
