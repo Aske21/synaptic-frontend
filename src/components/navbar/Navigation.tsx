@@ -10,6 +10,7 @@ import {
 } from "@mantine/core";
 import { useState } from "react";
 import "./navigation.css";
+import logo from "../../assets/logo.svg";
 
 export function Navigation() {
   const theme = useMantineTheme();
@@ -27,7 +28,11 @@ export function Navigation() {
     >
       <Grid>
         <Grid.Col span={10}>
-          <Anchor>Synaptic</Anchor>
+          <Anchor>
+            {" "}
+            <img src={logo} alt="logo" className="nav-logo" />
+            Synaptic
+          </Anchor>
         </Grid.Col>
         <Grid.Col span={2}>
           <Drawer

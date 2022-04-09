@@ -17,3 +17,13 @@
     text-decoration: none;
   }
 }
+
+.nav-logo {
+  width: 50px;
+  height: 40px;
+}
+
+.mantine-Drawer-drawer {
+  background-color: #ee6c4d;
+  color: white;
+}
