@@ -1,7 +1,7 @@
 import React from "react";
 import { MantineProvider } from "@mantine/core";
 import { Navigation } from "./components/navbar/Navigation";
-import Home from "./pages/Home";
+import Dashboard from "./pages/Dashboard";
 
 function App() {
   return (
@@ -29,9 +29,9 @@ function App() {
       }}
     >
       <div>
-        <Navigation />
+        {/* <Navigation /> */}
         <div>
-          <Home />
+          <Dashboard />
         </div>
       </div>
     </MantineProvider>
