@@ -55,13 +55,14 @@ function Home() {
             fontSize: "24px",
           }}
         >
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo nihil
-          amet, tempore molestias iusto tenetur vitae ea vero nulla a voluptate
-          quod recusandae omnis blanditiis? Aliquam aperiam inventore ab
-          voluptas.
+          <b>Synaptic</b> is a web application which strives to make traffic
+          faster and more secure. We offer solutions which can improve the
+          congestion we all face on the road. Our services provide governments
+          with ways to automatically and effortlessly control traffic lights in
+          the times of the rush hour.
         </p>
         <br />
-        <p
+        {/* <p
           style={{
             fontFamily: theme.fontFamily,
             fontWeight: 500,
@@ -70,11 +71,9 @@ function Home() {
             fontSize: "24px",
           }}
         >
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo nihil
-          amet, tempore molestias iusto tenetur vitae ea vero nulla a voluptate
-          quod recusandae omnis blanditiis? Aliquam aperiam inventore ab
-          voluptas.
-        </p>
+          Plate number detection combined with the power to measure speeds and
+          give automated notifications to users.
+        </p> */}
       </Center>
 
       <Container size="xs" className="contribute-container">

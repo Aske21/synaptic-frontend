@@ -19,6 +19,12 @@ import {
 } from "@mantine/core";
 import logo from "../assets/logo.svg";
 import Map from "../components/map/map";
+import { TicketTest } from "../components/ticketNotificationTest/ticketNotificationTest";
+import { ParkingFinder } from "../components/parkingFinder/parkingFinder";
+import { TrafficNotification } from "../components/trafficNotifications/trafficNotification";
+import { AdaptiveSemaphore } from "../components/adaptiveSemaphore/adaptiveSemaphore";
+import { TestingPage } from "./testingPage";
+import Statistics from "./Statistics";
 
 function Dashboard() {
   const theme = useMantineTheme();
@@ -52,35 +58,58 @@ function Dashboard() {
                 </h2>
               </Center>
             </Navbar.Section>
-
             <Navbar.Section
               grow
               mt="md"
               className="dashboard-navigation"
-              style={{ padding: "20px" }}
+              style={{ padding: "15px" }}
             >
               <Stack style={{ textAlign: "center" }}>
                 <Text>
-                  <Anchor href="/">Maps</Anchor>
+                  <Anchor
+                    onClick={() => {
+                      setSelectedSection(<Statistics />);
+                    }}
+                  >
+                    Statistics
+                  </Anchor>
+                </Text>
+                <Text>
+                  <Anchor
+                    onClick={() => {
+                      setSelectedSection(<Map />);
+                    }}
+                  >
+                    Maps
+                  </Anchor>
                 </Text>
 
                 <Text>
-                  <Anchor href="/">Parking Finder</Anchor>
+                  <Anchor
+                    onClick={() => {
+                      setSelectedSection(<TestingPage />);
+                    }}
+                  >
+                    Notification Center
+                  </Anchor>
                 </Text>
+
                 <Text>
-                  <Anchor href="/">Traffic Status</Anchor>
-                </Text>
-                <Text>
-                  <Anchor href="/">Road Warnings</Anchor>
-                </Text>
-                <Text>
-                  <Anchor href="/">Maps</Anchor>
+                  <Anchor
+                    onClick={() => {
+                      setSelectedSection(<AdaptiveSemaphore />);
+                    }}
+                  >
+                    Traffic Lights
+                  </Anchor>
                 </Text>
               </Stack>
             </Navbar.Section>
             <Navbar.Section>
               {/* need on click */}
-              <Button className="nav-button">Log out</Button>
+              <Button className="nav-button" id="partner">
+                Log out
+              </Button>
             </Navbar.Section>
           </Navbar>
         }
@@ -116,9 +145,9 @@ function Dashboard() {
           </Header>
         }
       >
-        <div className="section-container">
-          <Container size="xl">{selectedSection}</Container>
-        </div>
+        <Container style={{ width: "100%", height: "100%" }}>
+          {selectedSection}
+        </Container>
       </AppShell>
     </>
   );

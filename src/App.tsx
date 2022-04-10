@@ -40,7 +40,6 @@ function App() {
         <Route path="/login" element={<Login />} />
         <Route path="/register" element={<Register />} />
         <Route path="/dashboard" element={<Dashboard />} />
-        <Route path="/testpage" element={<TestingPage />} />
       </Routes>
     </MantineProvider>
   );
