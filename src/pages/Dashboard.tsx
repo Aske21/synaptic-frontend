@@ -58,19 +58,11 @@ function Dashboard() {
                 </h2>
               </Center>
             </Navbar.Section>
-
-            <Navbar.Section>
-              {/* need on click */}
-              <Center style={{ padding: "15px", margin: "2px" }}>
-                <hr style={{ width: "20px" }} />
-              </Center>
-            </Navbar.Section>
-
             <Navbar.Section
               grow
               mt="md"
               className="dashboard-navigation"
-              style={{ padding: "20px" }}
+              style={{ padding: "15px" }}
             >
               <Stack style={{ textAlign: "center" }}>
                 <Text>

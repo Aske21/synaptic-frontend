@@ -84,12 +84,19 @@ export default function Map() {
         closest = i;
       }
     }
-    let newMarker = completeMarkerList.filter(
-      (x: any) =>
-        x.lat == parkingList[closest][0] && x.lng == parkingList[closest][1]
-    )[0];
-    newMarker.url = "/parking_icon.png";
-    setMarkerList([newMarker]);
+    let newMarkers = [];
+    for (let i = 0; i < completeMarkerList.length; ++i) {
+      let marker = completeMarkerList[i];
+
+      if (marker.lat == parkingList[closest][0] && marker.lng == parkingList[closest][1]) {
+        marker.url = "/parking_icon.png";
+        newMarkers.push(marker);
+      } else {
+        marker.url = "/grey_parking_icon.png";
+        newMarkers.push(marker);
+      }
+    }
+    setMarkerList(newMarkers);
   }
 
   //Direction service (requires change)
