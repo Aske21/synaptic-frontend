@@ -47,7 +47,12 @@ export function Login() {
           />
 
           <Group>
-            <Button type="submit" className="nav-button button" size="md">
+            <Button
+              type="submit"
+              className="nav-button button"
+              id="partner"
+              size="md"
+            >
               <Anchor href="/dashboard">Log In</Anchor>
             </Button>
           </Group>

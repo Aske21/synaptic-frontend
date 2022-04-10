@@ -99,7 +99,7 @@ function Dashboard() {
             <Navbar.Section>
               {/* need on click */}
               <Button className="nav-button" id="partner">
-                Log out
+                <Anchor href="/">Log out</Anchor>
               </Button>
             </Navbar.Section>
           </Navbar>

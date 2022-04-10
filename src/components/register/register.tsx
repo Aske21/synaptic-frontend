@@ -10,6 +10,7 @@ import {
   Text,
   ThemeIcon,
   useMantineTheme,
+  Anchor,
 } from "@mantine/core";
 import "./register.css";
 export function Register() {
@@ -64,8 +65,12 @@ export function Register() {
           />
 
           <Group>
-            <Button type="submit" id="register" className="nav-button button">
-              Register
+            <Button
+              type="submit"
+              id="register partner"
+              className="nav-button button"
+            >
+              <Anchor href="/login"> Register</Anchor>
             </Button>
           </Group>
         </form>
