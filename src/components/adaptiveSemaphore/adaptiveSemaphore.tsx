@@ -8,15 +8,16 @@ import "./adaptiveSemaphore.css";
 export function AdaptiveSemaphore() {
 
   const defaultGreenLightDuration = 20
+  const greenLightDurationIncrement = 2
+  const greenLightDurationDecrement = 0.2
+  const congestionIncrement = 0.1
+  const congestionDecrement = 0.01
   const [leftcongestion, setLeftCongestion] = useState(0.05);
   const [rightcongestion, setRightCongestion] = useState(0.05);
   const [upcongestion, setUpCongestion] = useState(1);
   const [downcongestion, setDownCongestion] = useState(1);
   const [greenLight, setGreenLight] = useState(defaultGreenLightDuration);
-  const greenLightDurationIncrement = 2
-  const greenLightDurationDecrement = 0.2
-  const congestionIncrement = 0.1
-  const congestionDecrement = 0.01
+  
 
   function adapt() {
      if(rightcongestion <= 0.25 && upcongestion >= 0.5 && downcongestion >= 0.5){

@@ -6,7 +6,6 @@ import "./ticketNotificationTest.css";
 <pre>{process.env.REACT_APP_TELEGRAM_USER_ID}</pre>;
 export function TicketTest() {
   const [value, setValue] = useState("");
-
   return (
     <Container className="testContainer">
       <Box className="testBox">
