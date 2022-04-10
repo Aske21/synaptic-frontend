@@ -7,6 +7,7 @@ import {
   Container,
   Text,
   Checkbox,
+  Anchor,
 } from "@mantine/core";
 import { useForm } from "@mantine/form";
 import "./login.css";
@@ -47,7 +48,7 @@ export function Login() {
 
           <Group>
             <Button type="submit" className="nav-button button" size="md">
-              Log In
+              <Anchor href="/dashboard">Log In</Anchor>
             </Button>
           </Group>
         </form>

@@ -60,10 +60,15 @@ export function Navigation() {
             </h3>
             <h3>
               <Anchor href="/" id="drawer-nav">
+                Dashboard preview
+              </Anchor>
+            </h3>
+            <h3>
+              <Anchor href="/" id="drawer-nav">
                 Contact us
               </Anchor>
             </h3>
-            <h3></h3>
+
             <h3>
               <Anchor href="/login" id="drawer-nav">
                 Login
@@ -82,7 +87,7 @@ export function Navigation() {
               style={{ fontSize: "22px", width: "125px", height: "40px" }}
               id="partner"
             >
-              Menu
+              <Anchor>Menu</Anchor>
             </Button>
           </Group>
         </Grid.Col>
