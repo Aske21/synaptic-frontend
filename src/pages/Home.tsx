@@ -8,6 +8,7 @@ import {
   Button,
   MantineProvider,
   Container,
+  Anchor,
 } from "@mantine/core";
 
 import intro from "../assets/intro.svg";
@@ -40,7 +41,7 @@ function Home() {
             height: "60px",
           }}
         >
-          Register now
+          <Anchor href="/register">Register now </Anchor>
         </Button>
       </Center>
       <hr style={{ width: "750px" }} />
