@@ -21,7 +21,12 @@ export function TrafficNotification() {
   }
   return (
     <Container className="testContainer">
-      <Text className="headerTitle">Traffic Notification</Text>
+      <Text
+        className="headerTitle"
+        style={{ marginBottom: 3, color: "white", fontWeight: "bold" }}
+      >
+        Traffic Notification
+      </Text>
       <Box className="testBox">
         <Button
           onClick={() => generateTrafficNotification()}

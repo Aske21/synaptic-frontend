@@ -9,7 +9,12 @@ export function TicketTest() {
   return (
     <Container className="testContainer">
       <Box className="testBox">
-        <Text className="headerTitle">Ticket Notification</Text>
+        <Text
+          className="headerTitle"
+          style={{ marginBottom: 3, color: "white", fontWeight: "bold" }}
+        >
+          Ticket Notification
+        </Text>
 
         <Select
           label="Choose ticket type"

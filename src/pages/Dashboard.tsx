@@ -68,15 +68,6 @@ function Dashboard() {
                 <Text>
                   <Anchor
                     onClick={() => {
-                      setSelectedSection(<Statistics />);
-                    }}
-                  >
-                    Statistics
-                  </Anchor>
-                </Text>
-                <Text>
-                  <Anchor
-                    onClick={() => {
                       setSelectedSection(<Map />);
                     }}
                   >

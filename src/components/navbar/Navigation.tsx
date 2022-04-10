@@ -59,7 +59,7 @@ export function Navigation() {
               </Anchor>
             </h3>
             <h3>
-              <Anchor href="/" id="drawer-nav">
+              <Anchor href="/dashboard" id="drawer-nav">
                 Dashboard preview
               </Anchor>
             </h3>
