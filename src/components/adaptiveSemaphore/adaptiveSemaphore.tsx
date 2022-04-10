@@ -10,7 +10,7 @@ export function AdaptiveSemaphore() {
   const [congestion2, setCongestion2] = useState(0.7);
   const [light1, setLight1] = useState("Green");
   const [light2, setLight2] = useState("Red");
-  const [crossroads, setCrossroads] = useState("Pofalici");
+  const [crossroads, setCrossroads] = useState(" Pofalici");
   async function adapt() {
     var c1 = congestion1;
     var c2 = congestion2;
@@ -74,7 +74,6 @@ export function AdaptiveSemaphore() {
           fontSize: "1rem",
           fontWeight: 700,
           border: "2px solid",
-          width: "50%",
         }}
       >
         {crossroads}
